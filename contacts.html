@@ -49,53 +49,47 @@
     </section>
 <!--footer-->
 <footer class="footer">
-    <div class="container">
-        <div class="left-side">
-            <a class="logo-footer" href="./index.html"><span class="web">Web</span>Studio</a>
-            
-       <address class="address-footer" style="font-style:normal;"> 
-        <ul class="address list">
-        <li class="list-item"><a class="item address" href="https://goo.gl/maps/osiyzPxrACB18xaJ9" target="_blank" rel="noopener noreferrer nofollower" title="Фізична адреса">м. Київ, пр-т Лесі Українки, 26 </a> </li>
-        <li class="list-item"><a class="item mail" href="info@devstudio.com">info@devstudio.com</a></li>
-        <li class="list-item"><a class="item tel" href="+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-       </address></div>
-        
-        <div class="right-side">
-            <h3 class="footer-titel">приєднуйтесь</h3> 
-            <ul class="list-icon">
-                <li class="icon-footer"> <a class="link-icon-footer" href=""> <svg class="icon" width="20" height="20"><use href="./images/icons.svg.svg#icon-instagram"> </use> 
-                </svg> </a> </li>
-                <li class="icon-footer"><a class="link-icon-footer" href=""><svg class="icon" width="20" height="20"> <use href="./images/icons.svg.svg#icon-twitter"> </use> 
-                </svg></a></li>
-                <li class="icon-footer"><a class="link-icon-footer" href=""><svg class="icon" width="20" height="20"> <use href="./images/icons.svg.svg#icon-facebook"> </use> 
-                </svg></a></li>
-                <li class="icon-footer"><a class="link-icon-footer" href=""><svg class="icon" width="20" height="20" > <use href="./images/icons.svg.svg#icon-linkedin"> </use> 
-                </svg></a></li>
-            </ul>
-
-
-
-
-
-        </div>
-
-             <form class="subscript" name="subscription" autocomplete="on" novalidate> 
+        <div class="container footer__container">
+            <div class="footer__left-side">
+                <a class="logo footer__logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
                 
-                <label  for="subscription"> Підпишіться на розсилку
-                <input type="email" name="mail" placeholder="E-mail" id="subscription">
+           <address class="address" style="font-style:normal;"> 
+            <ul class="address__list">
+            <li class="address__item"><a class="address__link address__link--office" href="https://goo.gl/maps/osiyzPxrACB18xaJ9" target="_blank" rel="noopener noreferrer nofollower" title="Фізична адреса">м. Київ, пр-т Лесі Українки, 26 </a> </li>
+            <li class="address__item"><a class="address__link" href="info@devstudio.com">info@devstudio.com</a></li>
+            <li class="address__item"><a class="address__link" href="+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+           </address></div>
+            
+            <div class="footer__right-side">
+                <h3 class="footer__titel">приєднуйтесь</h3> 
+                 <ul class="icons-box icons-box--bottom">
+                        <li class="icons-box__item"><a href="https://www.instagram.com/"  rel="noopener noreferrer" aria-label="instagram icon"  target="_blank" class="icons-box__link icons-box__link--bottom"> <svg class="icons-box__svg" width="20" height="20"><use href="./images/icons.svg.svg#icon-instagram"> </use> 
+                        </svg></a></li>
+                       <li class="icons-box__item"><a href="https://twitter.com/" rel="noopener noreferrer" aria-label="twitter icon" target="_blank" class="icons-box__link icons-box__link--bottom"><svg class="icons-box__svg" width="20" height="20"> <use href="./images/icons.svg.svg#icon-twitter"> </use> 
+                        </svg></a></li>
+                        <li class="icons-box__item"><a href="https://www.facebook.com/" rel="noopener noreferrer" aria-label="facebook icon" target="_blank" class="icons-box__link icons-box__link--bottom"><svg class="icons-box__svg" width="20" height="20"> <use href="./images/icons.svg.svg#icon-facebook"> </use> 
+                        </svg></a></li>
+                        <li class="icons-box__item"><a href="https://www.linkedin.com/"  rel="noopener noreferrer" aria-label="linkedin icon" target="_blank" class="icons-box__link icons-box__link--bottom"><svg class="icons-box__svg" width="20" height="20" > <use href="./images/icons.svg.svg#icon-linkedin"> </use> 
+                        </svg></a></li>
+                    </ul> 
+
+
+            </div>
+
+            <form class="subscript" name="subscription" autocomplete="on" novalidate> 
+                
+                <label class="subscript__label"  for="subscription"> Підпишіться на розсилку
+                <input class="subscript__input" type="email" name="mail" placeholder="E-mail" id="subscription">
                 </label>
-                <button class="btn" type="submit"> Підписатися <svg class="icon-send" width="24" height="24">
+                <button class="subscript__btn" type="submit"> Підписатися <svg class="subscript__icon-send" width="24" height="24">
                   <use href="./images/icons.svg.svg#icon-send"></use>
                 </svg> </button>
-
-
 
             </form>
 
 
-
-    </div>
-</footer>
+        </div>
+    </footer>
 
 </body>

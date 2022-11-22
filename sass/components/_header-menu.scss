@@ -1,18 +1,23 @@
-.menu-list, .contacts-list{
+
+%link{
+    display: block;
+    padding-left: 0;
+    padding-top: 32px;
+    padding-bottom: 31px;
+    font-weight: 500;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.02em;
+}
+
+
+.menu-list{
     display: flex;
     margin:0;
     padding:0;
-}
-.contacts-list{
-    margin-left: auto;
-
-}
-
-.menu-list{
     margin-left: 93px;
-}
 
-.menu-list__item{
+&__item{
     position: relative;
     color: var(--title-color);
     transition-property: color;
@@ -20,16 +25,12 @@
     transition-timing-function: var(--transition-timing-function);
 }
 
-.menu-list__item:hover, .menu-list__item:focus{
+&__item:hover, &__item:focus{
    color: var(--effects-color); 
    
 }
 
-.menu-list__link{
-    color: currentColor;
-}
-
-.menu-list__link::after{
+&__link::after{
      display: inline-block;
     content:"" ;
     position: absolute;
@@ -48,7 +49,7 @@
 
 }
 
-.menu-list__link--current::after{
+&__link--current::after{
      display: inline-block;
     content:"" ;
     position: absolute;
@@ -63,47 +64,46 @@
     
 }
 
-.menu-list__link:hover::after{
+&__link:hover::after{
    color: var(--effects-color); 
    transform: scaleX(1);
 }
 
-.contacts-list__link {
-    color: var(--primary-color);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: var(--transition-timing-function);
-}
 
-.menu-list__link, .contacts-list__link{
-    display: block;
-    padding-left: 0;
-    padding-top: 32px;
-    padding-bottom: 31px;
-    font-weight: 500;
-   font-size: 14px;
-   line-height: 16px;
-   letter-spacing: 0.02em;
-}
-
-.contacts-list__link:hover, .contacts-list__link:focus{
-    color: var(--effects-color); 
-}
-
-.menu-list__item:not(:last-child){
+&__item:not(:last-child){
 margin-right: 50px;
 }
 
-.contacts-list__item:not(:last-child){
-margin-right: 30px;
-}
+&__link{
+    @extend %link;
+    color: currentColor;
+}}
 
-.contacts-list__link{
+.contacts-list{
+    @extend .menu-list;
+    margin-left: auto;
+
+
+&__link{
+  @extend %link;
+  color: var(--primary-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-timing-function);
     display: flex;
     align-items: center;
 }
 
-.contacts-list__svg{
+&__link:hover, &__link:focus{
+    color: var(--effects-color); 
+}
+
+&__item:not(:last-child){
+margin-right: 30px;
+}
+
+
+&__svg{
    margin-right: 10px;
    fill:currentColor;
-}
+}}

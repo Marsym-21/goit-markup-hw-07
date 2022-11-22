@@ -1,35 +1,25 @@
 .activity{
    padding-top: 94px;
    padding-bottom: 94px;
-}
 
-.activity__title{
+&__title{
 margin-top: 0px; 
-margin-bottom: 50px;
- 
-}
-.activity__title, .team__title, .customer__title{
-
- font-weight: 700;
- font-size: 36px;
- line-height: 1.17;
- text-align: center;
- letter-spacing: 0.03em;
+margin-bottom: 50px; 
 }
 
-.activity__list{
+&__list{
  display: flex;
  padding: 0px;
- margin: 0px;
-}
-.activity__item:not(:last-child){
+ margin: 0px;}
+
+&__item:not(:last-child){
     margin-right: 30px;
 }
-.activity__box{ 
-    position: relative;
-}
 
-.activity__text{
+&__box{ 
+    position: relative;}
+
+&__text{
     position: absolute;
     bottom: 0;
 
@@ -47,4 +37,4 @@ margin-bottom: 50px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-}
+}}

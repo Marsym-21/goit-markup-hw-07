@@ -1,22 +1,22 @@
 .speciality{
  padding-top: 94px;
-}
 
-.speciality__list{
+
+&__list{
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-.speciality__item{
+&__item{
     width: 270px;
 }
 
-.speciality__item:not(:first-child){
+&__item:not(:first-child){
     margin-left: 30px;
 }
 
-.speciality__icon{
+&__icon{
 background-color: var(--team-background-color);
 
 height: 120px;
@@ -29,7 +29,7 @@ border-radius: 4px;
 margin-bottom: 30px;
 }
 
-.speciality__name{
+&__name{
 font-size: 14px;
 font-weight: 700;
 line-height: 1.14;
@@ -38,9 +38,9 @@ margin-top: 0px;
 margin-bottom: 10px;
 }
 
-.speciality__text{
+&__text{
  font-size: 14px;
   line-height: 1.7;
   margin: 0px; 
   letter-spacing: 0.03em;
-}
+}}

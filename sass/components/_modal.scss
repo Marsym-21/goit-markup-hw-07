@@ -9,15 +9,19 @@
     transform:opacity;
     transition-duration: 250ms;
     transition-timing-function: var(--transition-timing-function);
-}
 
-.backdrop.is-hidden{
+&.is-hidden{
     transform:opacity;
     opacity: 0;
     visibility:hidden;
     pointer-events:none;
    
 }
+
+&.is-hidden .modal{
+    transform: translate(-50%, -50%) scale(0.5);
+ 
+}}
 
 .modal{
     position: absolute;
@@ -36,14 +40,10 @@
     transition-timing-function: var(--transition-timing-function);
 
     padding: 40px;   
-}
 
-
-.backdrop.is-hidden .modal{
-    transform: translate(-50%, -50%) scale(0.5);
- 
-}
-
+&__icon-vector{
+    fill:currentColor;
+}}
 
 .modal__btn{
     color:var(--title-color);
@@ -60,17 +60,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--transition-timing-function);
-}
 
-.modal__btn:hover, .modal__btn:focus{
+&:hover, &:focus{
     color: var(--effects-color);
 }
 
-.modal__icon-vector{
-    fill:currentColor;
-}
-
-.modal__btn-bottom{
+&-bottom{
     background-color: var(--button-color);
     color: var(--body-color);
    display: block;
@@ -91,4 +86,4 @@
    margin-top: 30px;
 
   box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+}}

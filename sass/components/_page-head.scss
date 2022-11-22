@@ -9,17 +9,15 @@ border-bottom: 1px solid var(--border-bottom);
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-}
 
-.container__head{
+&__head{
     display: flex;
     align-items:center;
-}
+}}
+
 .site-nav{
-    display: flex;
-    align-items:center;
-}
+  @extend .&__head;
 
-.site-nav .menu-list__link--current{
+& .menu-list__link--current{
 color: var(--effects-color);
-}
+}}
